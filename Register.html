@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+  
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.column {
+  float:left;
+  width: 30%;
+  padding: 20px;
+  height: 370px;
+  opacity: 0.5;
+  
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear:left;
+  
+}
+#ip2 {
+    border-radius: 15px;
+    border: 3px solid rgb(99, 108, 108);
+    padding: 10px; 
+    width: 300px;
+    height: 3px;    
+}
+#ip1 {
+    border-radius: 15px;
+    background: rgb(152, 172, 177);
+    padding: 15px; 
+    width: 90px;
+    height: 2px;    
+}
+</style>
+</head>
+<body style="background-image: url('black.jpeg');background-size: cover;background-repeat: no-repeat;">
+    <div id="mySidenav" class="sidenav">
+        <input type="button" value="Go back!" onclick="history.back()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+        <a href="Home.html">Home</a>
+       
+      </div>
+
+<h3>Registration Form</h3>
+<h4 style="color:rgb(243, 57, 57)"><i>for New Users Only:</i></h4>
+<form action="connect.php" method="POST">
+
+    <div class="row">
+        <div class="column" style="background-color:#bbb;">
+                  <label for="fname">First name:</label><br/>
+                  <input type="text" name="fname" required="true"  id="ip2" placeholder="firstname"  /><br/>
+      
+                  <label for="mname">Middle name:</label><br/>
+                  <input type="text" name="mname"  id="ip2" placeholder="mid-name"/><br/>
+      
+                  <label for="sname">Surname:</label><br/>
+                  <input type="text" name="sname" required="true" id="ip2" placeholder="surname"/><br/>
+      
+                  <label for="usname">Username:</label><br/>
+                  <input type="text" name="usname" required="true" id="ip2"placeholder="username"/><br/>
+      
+                  <label for="dob">Date of Birth:</label><br/>
+                  <input type="date" name="dob" required="true" id="ip2" placeholder="date"/><br/>
+      
+                  <label for="password">Password:</label><br/>
+                  <input type="password" name="password"  id="ip2" required="true"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8"  placeholder="password"/><br/>
+          
+      
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <label for="CV">Your CV:</label><br/>
+          <input type="file" name="CV" value="Upload" /><br/>
+      
+          <label for="email">Email:</label><br/>
+          <input type="email" name="email" required="true" id="ip2" placeholder="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"/><br/>
+      
+          <label>Phone number:</label><br/>
+          <input type="tel" name="phone" required="true" id="ip2" placeholder="phone"/><br/>
+      
+          <label for="facebook">Facebook:</label><br/>
+          <input type="text" name="fbook" id="ip2" placeholder="fbook"/><br/>
+      
+          <label for="twitter">Twitter:</label><br/>
+          <input type="text" name="twitter"  id="ip2" placeholder="twitter"/><br/>
+      
+          <label for="insta">Instagram:</label><br/>
+          <input type="text" name="insta"  id="ip2" placeholder="insta"/><br/><br/>
+      
+          <input type="submit" name="submit"  id="ip1" value="Register"   />
+         
+          
+      
+          
+        </div>
+      </div>
+      <div>
+          <a href="RegLogin.html"><h4><i>for Registered Users click here</i></h4></a>
+      </div>
+      
+</form>
+
+
+
+
+
+
+</body>
+
+</html>

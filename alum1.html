@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alum1 page</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div align="left">
+            <form action='connector.php' method="POST" >
+                <label for="alname">Alumnus name:</label>
+                <input type="text" name="alname" placeholder="enter name"  maxlength="30" required="true"/><br/><br/>
+
+                <label for="yearOfEn">Year of enrolment:</label>
+                <select>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select><br/>
+
+                <label for="yearOfGr">Year of Graduation:</label>
+                <select>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select><br/>
+
+                <label for="headmasterEn">Headmaster during Enrolment:</label>
+                <input type="text" name="headmasterEn" placeholder="enter name" required="true"/><br/><br/>
+
+                <label for="headmasterGr">Headmaster during Graduation:</label>
+                <input type="text" name="headmasterGr" placeholder="enter name" required="true"/><br/><br/>
+
+                <label for="fteacher">Famous teacher during Graduation:</label>
+                <input type="text" name="fteacher"  maxlength="30" placeholder="enter name" required="true"/><br/><br/>
+
+                <label for="result">Result Summary:</label>
+                <select>
+                    <option value="div one">div one</option>
+                    <option value="div two">div two</option>
+                    <option value="div three">div three</option>
+                    <option value="div four">div four</option>
+                    <option value="div zero">div zero</option>
+                </select><br/>
+                <label for="occupation">Current Occupation:</label>
+                <input type="text" name="occupation"   placeholder="enter occupation" required="true" maxlength="20"/>
+                
+
+                <label for="address">Address:</label>
+                <input type="text" name="address" placeholder="enter address" required="true"/><br/><br/>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required="true" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"/><br/><br/>
+
+                <label for="mnumber">Mobile number:</label>
+                <input type="tel" name="mnumber" required="true"/><br/><br/>
+
+                <input type="submit" name="submit" value="submit" />
+              
+                
+                
+              </form>
+        </div>
+        
+        
+    </body>
+</html>

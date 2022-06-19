@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>About page description</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="hppts://fonts.googleapis.com/css?family=Inconsolata">
+        <style>
+            body{
+                
+                font-family: 'Inconsolata',monospace;
+                font-weight: lighter;
+                color: rgb(246, 241, 241);
+                text-align: center;
+                -webkit-font-smoothing:antialiased;
+
+            }
+            .box-wrap{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                margin:10%;
+            }
+            .box{
+                padding:90px;
+                margin:2%;
+                background:#545867;
+                width: 70%;
+                border:1px solid #060606;
+                box-shadow:0 2px 3px 0px
+                rgba(0, 0,0, 0.25);
+                border-radius:15px;
+                transition: 2s all;
+                opacity:0.8;
+            }
+            .box-wrap:hover .box{
+                filter:blur(3px);
+                opacity: 0.6;
+                transform: scale(0.91);
+                box-shadow:none;
+
+            }
+            .box-wrap:hover .box:hover{
+                transform: scale(1);
+                filter:blur(0px);
+                opacity: 0.5;
+                box-shadow: 0 8px 20px 0px
+                rgba(0, 0,0, 0.125);
+            }
+        </style>
+       
+    </head>
+    <body style="background-image:url('school1.jpg');background-size:cover;background-repeat: no-repeat;background-position: fixed;">
+
+        <form  align="left">
+           
+            <div id="mySidenav" class="sidenav">
+               
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                <a href="Home.html">Home</a>
+                <a href="Register.html">Register</a>
+                <a href="Alumni.html">Alumni</a>
+                <a href="Staff.html">Staff</a>
+                <a href="Contacts.html">Contacts</a>
+               
+              </div>
+         </form>
+
+
+        <div align="center">
+            <h2 >Get to know Our School Better</h2>
+            <div class="box">
+                <h3><b>Historical background/Location:</b></h3>
+                <p >
+                    Feza Boys' secondary school started to operate in 1998 at Mikocheni with few students and recently
+                    is located at Tegeta with about 480 students. Our school campus has been designed to satisfy the major 
+                    goals of our esteemed instituion; proper growth of our students mentally, physically and academically. we 
+                    believe that such a focused environment is best way to create good citizens and future leaders of this 
+                    great nation.
+                </p>
+                <p>
+                    As a result of quality education we provide, our graduates have attained 100% placement in further 
+                    educational institutions both in Tanzania and around the world.
+                </p>
+            </div>
+            
+            <div class="box">
+                <h3>Education level and Admission:</h3>
+                <p>
+                    Feza Boys Secondary School opened as a secondary school from Form I to Form IV and started high school in 2005.
+                     Our school admits all kinds of students including the ones having disabilities like the blind, deaf and those 
+                     crippled in any other way. Feza Boys secondary school is accredited by The Ministry of Education and Vocational 
+                     Training of Tanzania. The school conducts competitive admission process. 
+                </p>
+            </div>
+            <div class="box">
+                <h3>Staff and Subjects:</h3>
+                <p>
+                    The school's staff is mainly Tanzanian with a number of foreign volunteering teachers from different 
+                    countries around the world. The student body is at large Tanzanian with a minority of white and Asian 
+                    origin students. Our school follows the curriculum as suggested by NECTA.
+                </p>
+                <p>There are various of subjects taught in our school. they include: Basic Mathematics, English, Biology, Chemistry, Kiswahili, Geography, 
+                    Physics, Civics, History and Islamic knowledge.
+
+                </p>
+            </div>
+            <div class="box">
+                <h3>Vision and Mission:</h3>
+                <p>
+                    Our vision is to rise a new generation equipped with a quality education, leadership skills, National pride,
+                     innovation, creativity, self-discipline, character, value and dignity.
+                </p>
+                <p>
+                    Our mission is to provide beeter education that can bring up creative minds and well-mannered citizens 
+                    with life-long passion for learning, a strong sense of moral responsibility and a welcoming of diversity.
+                </p>
+            
+        </div>
+        <script>
+            
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+        </script>
+
+        
+            
+        
+
+    </body>
+</html>
